@@ -1,0 +1,48 @@
+{
+    "depression_binary": {
+        "target_name": "Depression Binary",
+        "model_name": "Logistic Regression",
+        "model_file": "depression_q1_logistic.joblib",
+        "input": "Q1 Full Audio",
+        "feature_count": 1095,
+        "class_mapping": {
+            "0": "Minimal / No symptoms",
+            "1": "Elevated symptoms"
+        },
+        "training_samples": 298,
+        "class_counts": {
+            "0": 211,
+            "1": 87
+        },
+        "test_balanced_accuracy": 0.8481532147742818,
+        "test_macro_f1": 0.8125,
+        "test_roc_auc": 0.9028727770177838,
+        "best_params": {
+            "clf__C": 10,
+            "select__k": 20
+        }
+    },
+    "anxiety_binary": {
+        "target_name": "Anxiety Binary",
+        "model_name": "Logistic Regression",
+        "model_file": "anxiety_q1_logistic.joblib",
+        "input": "Q1 Full Audio",
+        "feature_count": 1095,
+        "class_mapping": {
+            "0": "Minimal / No symptoms",
+            "1": "Elevated symptoms"
+        },
+        "training_samples": 295,
+        "class_counts": {
+            "0": 201,
+            "1": 94
+        },
+        "test_balanced_accuracy": 0.6407894736842106,
+        "test_macro_f1": 0.6228310502283105,
+        "test_roc_auc": 0.6657894736842105,
+        "best_params": {
+            "clf__C": 0.1,
+            "select__k": 20
+        }
+    }
+}
